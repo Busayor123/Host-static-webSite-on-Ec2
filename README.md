@@ -59,7 +59,7 @@ markdown
 Copy code
 ## Architecture Diagram
 
-![Architecture Diagram](url-to-your-image)
+![Architecture Diagram](Hosting on ec2.png)
 Replace "url-to-your-image" with the actual URL of your hosted architecture diagram image.
 
 Feel free to customize the README and architecture diagram according to your specific details and preferences. If you encounter any issues or have specific requirements, let me know, and I'd be happy to assist further.
