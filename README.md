@@ -1,6 +1,6 @@
 ## Architecture Diagram
 
-![Architecture Diagram](Hosting on ec2.png)
+![Architecture Diagram](html.png)
 
 
 **README.md**
