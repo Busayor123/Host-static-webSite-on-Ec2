@@ -32,6 +32,7 @@ cp -r mole-main/* /var/www/html/
 rm -rf main.zip
 systemctl enable httpd
 systemctl start httpd
+
 This script installs the Apache web server, downloads your website files from the specified GitHub repository, and starts the web server.
 
 Accessing the Website
