@@ -3,7 +3,7 @@
 # Host-static-webSite-on-Ec2
 Host static webSite on Ec2
 
-[Insert Image Here: Hosting on ec2.png]
+[Hosting on ec2.png]
 
 README.md
 Static Website Deployment on Amazon EC2
