@@ -37,7 +37,7 @@ User Data Script:
 The EC2 instance is configured using the following user data script during launch:
 #!/bin/bash
 
-sudo su
+**sudo su
 yum update -y
 yum install -y httpd
 cd /var/www/html
@@ -46,7 +46,7 @@ unzip mole.zip
 cp -r mole-main/* /var/www/html/
 rm -rf mole.zip
 systemctl enable httpd
-systemctl start httpd
+systemctl start httpd**
 
 ##bash
 
