@@ -9,7 +9,7 @@
 Static Website Deployment on Amazon EC2
 This repository contains the necessary files and instructions for deploying a static website on an Amazon EC2 instance using the Amazon Linux 2 AMI.
 
-Hosting on ec2.png
+##Hosting on ec2.png
 
 ##Prerequisites
 An AWS account with access to the EC2 service.
@@ -25,10 +25,7 @@ During the EC2 instance launch, use the following User Data script:
 
 ##bash
 
-
-
 #!/bin/bash
-
 sudo su
 sudo yum update -y
 sudo yum install -y httpd
@@ -39,7 +36,7 @@ cp -r YourRepo-main/* /var/www/html/
 rm -rf main.zip
 systemctl enable httpd
 systemctl start httpd
-Replace "YourUsername" and "YourRepo" with your GitHub username and repository name, respectively.
+
 
 ##Accessing the Website
 Once the EC2 instance is running and the web server is started, access your static website by navigating to the public IP of your EC2 instance in a web browser.
