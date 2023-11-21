@@ -24,7 +24,9 @@ User Data Script
 During the EC2 instance launch, use the following User Data script:
 
 ##bash
-Copy code
+
+
+
 #!/bin/bash
 
 sudo su
