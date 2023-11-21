@@ -26,14 +26,21 @@ During the EC2 instance launch, use the following User Data script:
 ##bash
 
 #!/bin/bash
+
+
+User Data Script:
+
+The EC2 instance is configured using the following user data script during launch:
+#!/bin/bash
+
 sudo su
-sudo yum update -y
-sudo yum install -y httpd
+yum update -y
+yum install -y httpd
 cd /var/www/html
-wget https://github.com/YourUsername/YourRepo/archive/refs/heads/main.zip
-unzip main.zip
-cp -r YourRepo-main/* /var/www/html/
-rm -rf main.zip
+wget  https://s3.amazonaws.com/myaws.bucket456/mole.zip
+unzip mole.zip
+cp -r mole-main/* /var/www/html/
+rm -rf mole.zip
 systemctl enable httpd
 systemctl start httpd
 
