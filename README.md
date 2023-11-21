@@ -5,7 +5,22 @@
 ![AWS Architecture Diagram](Ec2.png)
 
 
+User Data Script:
 
+The EC2 instance is configured using the following user data script during launch:
+#!/bin/bash
+
+sudo su
+yum update -y
+yum install -y httpd
+cd /var/www/html
+wget  https://s3.amazonaws.com/myaws.bucket456/mole.zip
+unzip mole.zip
+cp -r mole-main/* /var/www/html/
+rm -rf mole.zip
+systemctl enable httpd
+systemctl start httpd
+.
 
 
 **README.md**
