@@ -5,6 +5,8 @@ README.md
 Static Website Deployment on Amazon EC2
 This repository contains the necessary files and instructions for deploying a static website on an Amazon EC2 instance using the Amazon Linux 2 AMI.
 
+Hosting on ec2.png
+
 Prerequisites
 An AWS account with access to the EC2 service.
 Basic knowledge of AWS EC2 and security groups.
