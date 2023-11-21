@@ -23,6 +23,31 @@ Configure the security group to allow inbound traffic on port 80 (HTTP).
 User Data Script
 During the EC2 instance launch, use the following User Data script:
 
+EC2 Instance:
+
+Launch a new EC2 instance using an Amazon Linux 2 AMI or a suitable AMI.
+Use the default VPC/SUBNET.
+Enable the public IP for the instance.
+Configure the security group to allow inbound traffic on port 80 (HTTP).
+User Data Script:
+
+The EC2 instance is configured using the following user data script during launch: User create an architecture diagram Host an HTML website on a single EC2 uploading the web files from s3.
+User Data Script:
+
+The EC2 instance is configured using the following user data script during launch:
+#!/bin/bash
+
+sudo su
+yum update -y
+yum install -y httpd
+cd /var/www/html
+wget  https://s3.amazonaws.com/myaws.bucket456/mole.zip
+unzip mole.zip
+cp -r mole-main/* /var/www/html/
+rm -rf mole.zip
+systemctl enable httpd
+systemctl start httpd
+
 ##bash
 
 #!/bin/bash
@@ -48,13 +73,9 @@ systemctl start httpd
 ##Accessing the Website
 Once the EC2 instance is running and the web server is started, access your static website by navigating to the public IP of your EC2 instance in a web browser.
 
-Example: http://<public-ip>/
 
-Cleaning Up
-Remember to terminate your EC2 instance when you're done to avoid incurring unnecessary charges.
-
-Author
-[Your Name]
+**Author
+[Oluwabusayo Abati]**
 
 License
 This project is licensed under the MIT License.
