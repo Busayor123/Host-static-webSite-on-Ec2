@@ -1,9 +1,9 @@
 ## Architecture
 
-![AWS Architecture Diagram](html.png)
+![AWS Architecture Diagram](Ec2.png)
 
 
-![Architecture Diagram]()
+
 
 ##README.md
 Static Website Deployment on Amazon EC2
