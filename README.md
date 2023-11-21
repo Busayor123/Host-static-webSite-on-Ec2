@@ -37,8 +37,10 @@ User Data Script:
 The EC2 instance is configured using the following user data script during launch:
 #!/bin/bash
 
-**sudo su
+sudo su
+
 yum update -y
+
 yum install -y httpd
 cd /var/www/html
 wget  https://s3.amazonaws.com/myaws.bucket456/mole.zip
