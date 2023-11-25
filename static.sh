@@ -1,7 +1,7 @@
 #!/bin/bash
  sudo su
- sudo yum update -y
- sudo yum install -y httpd
+ yum update -y
+ yum install -y httpd
  cd /var/www/html
  wget https://github.com/Busayor123/Host-static-webSite-on-Ec2/archive/refs/heads/main.zip
  unzip main.zip
