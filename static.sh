@@ -3,7 +3,7 @@
  yum update -y
  yum install -y httpd
  cd /var/www/html
- wget https://github.com/Busayor123/Host-static-webSite-on-Ec2/archive/refs/heads/main.zip
+ wget https://github.com/Busayor123/Host-static-webSite-on-Ec2/raw/main/mole.zip
  unzip main.zip
  cd Host-static-webSite-on-Ec2-main/
  unzip mole.zip
