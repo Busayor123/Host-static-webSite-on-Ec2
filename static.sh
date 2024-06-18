@@ -4,10 +4,8 @@
  yum install -y httpd
  cd /var/www/html
  wget https://github.com/Busayor123/Host-static-webSite-on-Ec2/raw/main/mole.zip
- unzip main.zip
- cd Host-static-webSite-on-Ec2-main/
  unzip mole.zip
  cp -r  mole-main/* /var/www/html/ 
- rm -rf main.zip Host-static-webSite-on-Ec2-main
+ rm -rf mole.zip 
  systemctl enable httpd
  systemctl start httpd
